@@ -1,42 +1,16 @@
-/* Global layout */
+/* =========================
+   TAG SELECTORS
+   ========================= */
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 20px;
   background-color: #f4f4f4;
 }
 
-/* Header */
-.site-header {
-  background-color: #333;
-  color: #fff;
+header, footer {
   padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-.site-header h1 {
-  margin: 0 0 10px 0;
-}
-
-.text {
-  margin: 0 0 10px 0;
-}
-
-/* Cards and main area */
-main {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 6px;
-  padding: 16px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-  margin-bottom: 16px;
 }
 
 h2 {
@@ -44,40 +18,72 @@ h2 {
   margin-top: 0;
 }
 
-/* Flex row for weekly plan */
-.flex-row {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
+/* =========================
+   CLASSES
+   ========================= */
 
-.flex-row .card {
-  flex: 1 1 280px;
-}
-
-.card img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 10px;
-}
-
-/* Footer */
-.site-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+.center-text {
   text-align: center;
-  margin-top: 20px;
-  border-radius: 5px;
 }
 
+.muted-text {
+  color: #555;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 16px;
+}
+
+.content-card {
+  background: white;
+  margin: 20px auto;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+/* Navigation link style */
 .nav-link {
-  color: #2ecc71;
+  display: inline-block;
+  margin-top: 10px;
   text-decoration: none;
+  color: #2ecc71;
   font-weight: bold;
 }
 
 .nav-link:hover {
   text-decoration: underline;
+}
+
+/* =========================
+   IDS (unique sections)
+   ========================= */
+
+#recovery-section { border-left: 6px solid #2b7a78; }
+#nutrition-section { border-left: 6px solid #f4a261; }
+#training-section { border-left: 6px solid #2b7a78; }
+#conditioning-section { border-left: 6px solid #f4a261; }
+
+/* Footer ID matches your HTML */
+#page-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* =========================
+   FLEXBOX
+   ========================= */
+
+.flex-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.flex-box {
+  flex: 1;
+  min-width: 250px;
 }
