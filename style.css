@@ -1,0 +1,169 @@
+/* =========================
+   SKIP LINK
+   ========================= */
+
+/* Hides skip link visually but keeps it accessible to screen readers */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #003366;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  z-index: 100;
+}
+
+/* Shows skip link when focused by keyboard */
+.skip-link:focus {
+  top: 0;
+}
+
+/* =========================
+   TAG SELECTORS
+   ========================= */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #222222;
+}
+
+header, footer {
+  padding: 20px;
+}
+
+/* Fixed: #2ecc71 bright green failed contrast — changed to dark green */
+h2 {
+  color: #1a7a3f;
+  margin-top: 0;
+}
+
+h3 {
+  color: #222222;
+  margin-top: 16px;
+}
+
+/* =========================
+   CLASSES
+   ========================= */
+
+.center-text {
+  text-align: center;
+}
+
+.muted-text {
+  color: #cccccc;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 16px;
+}
+
+.content-card {
+  background: white;
+  margin: 20px auto;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+/* Fixed: #2ecc71 failed contrast — changed to dark green */
+.nav-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   IDS (unique sections)
+   ========================= */
+
+#recovery-section   { border-left: 6px solid #2b7a78; }
+#nutrition-section  { border-left: 6px solid #f4a261; }
+#training-section   { border-left: 6px solid #2b7a78; }
+#conditioning-section { border-left: 6px solid #f4a261; }
+
+#page-footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Nav links inside dark footer need white color */
+#page-footer .nav-link {
+  color: #ffffff;
+}
+
+/* =========================
+   FLEXBOX
+   ========================= */
+
+.flex-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.flex-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* =========================
+   MEDIA QUERY — smaller screens
+   ========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-box {
+    min-width: 100%;
+  }
+
+  .content-card {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+}
+```
+
+---
+
