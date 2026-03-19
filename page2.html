@@ -5,69 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Soccer recovery and nutrition tips to help players perform and feel their best.">
   <title>Soccer Recovery and Nutrition</title>
+
+  <!-- Bootstrap CDN — linked ABOVE custom CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- Skip navigation link for keyboard and screen reader users -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header id="page-header">
-    <h1 class="center-text">Recovery and Nutrition</h1>
-    <p class="center-text">This page explains how soccer players recover after training.</p>
-    <nav aria-label="Main navigation">
-      <a href="index.html" class="nav-link">Back to Soccer Training home</a>
+  <header class="site-header text-center py-5">
+    <h1 class="display-5 fw-bold">Recovery and Nutrition</h1>
+    <p class="lead mt-2">This page explains how soccer players recover after training.</p>
+    <nav class="mt-3" aria-label="Main navigation">
+      <a href="index.html" class="btn btn-light">Back to Soccer Training Home</a>
     </nav>
   </header>
 
-  <main id="main-content" class="main-content">
+  <main id="main-content" class="container my-5">
 
     <!-- Recovery Section -->
-    <section id="recovery-section" class="content-card">
-      <h2>Recovery</h2>
-
-      <div class="flex-container">
-        <div class="flex-box">
+    <section id="recovery-section" class="content-card mb-4 p-4">
+      <h2 class="mb-3">Recovery</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
           <p>Rest is important after training and games.</p>
           <p>Sleeping and stretching helps the body recover faster and reduces injury risk.</p>
         </div>
-
-        <div class="flex-box">
-          <ul>
-            <li>Get 8 or more hours of sleep each night</li>
-            <li>Drink water throughout the day</li>
-            <li>Stretch for at least 10 minutes after training</li>
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Get 8 or more hours of sleep each night</li>
+            <li class="list-group-item">Drink water throughout the day</li>
+            <li class="list-group-item">Stretch for at least 10 minutes after training</li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- Nutrition Section -->
-    <section id="nutrition-section" class="content-card">
-      <h2>Nutrition</h2>
+    <section id="nutrition-section" class="content-card mb-4 p-4">
+      <h2 class="mb-3">Nutrition</h2>
       <p>Eating the right food helps players stay strong, recover faster, and perform consistently.</p>
-
-      <h3>Daily Nutrition Routine</h3>
-      <ol>
-        <li>Eat a balanced meal 2 hours before practice</li>
-        <li>Drink water before, during, and after training</li>
-        <li>Eat a protein-rich meal within 30 minutes after training</li>
-      </ol>
-
-      <h3>Foods to Focus On</h3>
-      <ul>
-        <li>Lean proteins: chicken, eggs, beans</li>
-        <li>Complex carbohydrates: rice, oats, whole wheat bread</li>
-        <li>Fruits and vegetables for vitamins and minerals</li>
-      </ul>
+      <div class="row g-4 mt-1">
+        <div class="col-md-6">
+          <h3>Daily Nutrition Routine</h3>
+          <ol>
+            <li>Eat a balanced meal 2 hours before practice</li>
+            <li>Drink water before, during, and after training</li>
+            <li>Eat a protein-rich meal within 30 minutes after training</li>
+          </ol>
+        </div>
+        <div class="col-md-6">
+          <h3>Foods to Focus On</h3>
+          <ul>
+            <li>Lean proteins: chicken, eggs, beans</li>
+            <li>Complex carbohydrates: rice, oats, whole wheat bread</li>
+            <li>Fruits and vegetables for vitamins and minerals</li>
+          </ul>
+        </div>
+      </div>
     </section>
+
+    <div class="text-center mt-4">
+      <a href="index.html" class="btn btn-success btn-lg">Back to Home</a>
+    </div>
 
   </main>
 
-  <footer id="page-footer" aria-label="Site footer">
-    <p class="muted-text">HTML project &copy; 2026</p>
-    <a href="index.html" class="nav-link">Return to Soccer Training home page</a>
+  <footer id="page-footer" class="site-footer text-center py-4" aria-label="Site footer">
+    <p class="muted-text mb-1">HTML project &copy; 2026</p>
+    <a href="index.html" class="footer-link">Return to Soccer Training Home Page</a>
   </footer>
 
 </body>
